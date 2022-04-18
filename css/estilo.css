@@ -22,6 +22,21 @@
   font-weight: bold;
 }
 
+.wheater-comtainer {
+  align-items: center;
+}
+.wheater-comtainer h1 {
+  font-size: 15px;
+}
+.wheater-comtainer h2 {
+  font-size: 10px;
+}
+.wheater-comtainer h3 {
+  font-size: 18px;
+}
+
+
+
 
 .nav-item-login img {
   width: 65px;
