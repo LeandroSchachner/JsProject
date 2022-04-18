@@ -22,6 +22,7 @@
   font-weight: bold;
 }
 
+/* CLIMA */
 .wheater-container {
   align-items: center;
 }
@@ -55,6 +56,7 @@
   color:#FC8A73;}
 
 /* BOTONES */
+
 .addToCart{
   border: 0;
   line-height: 2.5;
