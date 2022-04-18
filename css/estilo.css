@@ -22,16 +22,16 @@
   font-weight: bold;
 }
 
-.wheater-comtainer {
+.wheater-container {
   align-items: center;
 }
-.wheater-comtainer h1 {
+.wheater-container h1 {
   font-size: 15px;
 }
-.wheater-comtainer h2 {
+.wheater-container h2 {
   font-size: 10px;
 }
-.wheater-comtainer h3 {
+.wheater-container h3 {
   font-size: 18px;
 }
 
