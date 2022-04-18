@@ -8,6 +8,7 @@
     <meta name="description" content="Decora tu evento con diseños 100% personalizados">
     <meta name="keywords" content="diseño, regalos, perzonalizables, kits de baño, eventos, fiestas, cumpleaños, bodas">
     
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="sweetalert2.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/be4967ac76.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+   
     
     
     <title>Web de Wonderland Diseños</title>
@@ -63,10 +64,19 @@
                 
                 </div>
                 </div>
+
+                <div class="wheater-comtainer">
+                        <h1 id="temperaturaValor"></h1>
+                        <h2 id="temperaturaDescripcion"></h2>
+                        <h3 id="ubicacion"></h3>
+                        <img id="iconoAnimado" src="" alt="icono" height="90" width="90">
+                </div>
+
                 <div class="nav-item-login">
                     <a class="nav-link" href="./login.html"><img src="./img/icon/iniciar-sesion.png"></a>
                     <a class="nav-link" href="./login.html"><p>Iniciar sesion</p></a>
                 </div>
+
             </nav>
 
             <!--FIN DE --NAVEGACION-->
@@ -184,6 +194,7 @@
                                 <p class="itemPrice">$1500</p>
                                 <button class="addToCart" id="add" type="button">Agregar al carrito</button>
                             </div>
+                            
 
                             <!--CARRITO-->
 
@@ -390,7 +401,8 @@
         <p>Wonderland Diseños - Julieta Geist - Leandro Schachner</p>
     </footer>
    
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="./clima.js"></script>
+    <script src="./toast.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./login.js"></script>
