@@ -20,7 +20,7 @@ function guardarDatos(storage) {
 function borrarDatos(storage){
     storage.clear();
 }
-
+/* BOTONES */
 let recordar = document.getElementById("recordarme");
 let btnLogin = document.getElementById("btnLogin");
 let btnVaciarLocalStorage = document.getElementById('btnVaciarLocalStorage');
@@ -44,8 +44,9 @@ btnVaciarSessionStorage.addEventListener('click', () => {
     borrarDatos(sessionStorage);
 });
 
-
-
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
 
 
 

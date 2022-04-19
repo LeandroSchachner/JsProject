@@ -3,8 +3,11 @@
 
 const addToShoppCartButtons = document.querySelectorAll(".addToCart");
 addToShoppCartButtons.forEach(addToCartButton => {
-    addToCartButton.addEventListener('click', addToCartClicked);
+    
+    addToCartButton.addEventListener('click', addToCartClicked)
 });
+ 
+
 
 const comprarButton = document.querySelector('.comprarButton');
 comprarButton.addEventListener('click', comprarButtonClicked)
@@ -133,49 +136,28 @@ function comprarButtonClicked() {
 
 /* MODALES Y ALERTAS */
 
-let comprar = document.getElementById("btnComprar");
+let alert = document.getElementById("btnComprar");
 
-btnComprar.addEventListener("click", () => {
+alert.addEventListener("click", () => {
+   
+    swal({
+        title: "Estas seguro?",
+        text: "Una vez realizada la compra no hay vuelta atras!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          swal("Tu compra se ha realizado!", {
+            icon: "success",
+          });
+        } else {
+          swal("Tu compra se ha cancelado");
+        }
+      });
+} )
 
-    const swalWithBootstrapButtons = Swal.mixin({
-    customClass: {
-        confirmButton: 'btn btn-success',
-        cancelButton: 'btn btn-danger'
-    },
-    buttonsStyling: false
-    })
 
-    swalWithBootstrapButtons.fire({
-    title: 'Confirmas tu compra?',
-    text: "Una vez confirmada, no podras cancelar!",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonText: 'Si, comprar!',
-    cancelButtonText: 'No, cancelar compra!',
-    reverseButtons: true
-    }).then((result) => {
-    if (result.isConfirmed) {
-        swalWithBootstrapButtons.fire(
-        'Confirmado!',
-        'Tu compra se ha hecho satisfactoriamente.',
-        'Hecho'
-        )
-    } else if (
-        /* Read more about handling dismissals below */
-        result.dismiss === Swal.DismissReason.cancel
-    ) {
-        swalWithBootstrapButtons.fire(
-        'Compra cancelada',
-        'Tu compra se ha cancelado',
-        'error'
-        )
-    }
-    })
-      
-})
 
-let agregar = document.getElementById("add");
-
-    add.addEventListener("click", () => {
-       
-})
+    
